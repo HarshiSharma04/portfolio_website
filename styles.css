@@ -1,0 +1,693 @@
+/* Reset default margin and padding */
+html, body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://wallpaperaccess.com/full/5652030.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem 0;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+nav ul li a:hover {
+    background-color: #e74c3c;
+    border-radius: 5px;
+    color: white; /* Change text color on hover */
+}
+
+/* Main content area */
+.main-content {
+    padding-top: 6rem;
+}
+
+/* Section styling */
+.section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center; /* Center align all text and headings */
+}
+
+.section h2 {
+    text-align: center; /* Center align section headings */
+}
+
+.section p {
+    text-align: center; /* Center align paragraphs */
+}
+
+/* Home section */
+#home {
+    padding: 2rem 2rem 1rem; /* Adjusted padding for the home section */
+}
+
+#home h1 {
+    font-size: 3.5rem; /* Increased font size */
+    color: white; /* Changed text color to white */
+    text-align: center; /* Center align homepage heading */
+    margin-bottom: 1rem; /* Reduced margin bottom */
+}
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Adjust the gap between the image and text */
+}
+
+.profile-image {
+    border-radius: 50%; /* Optional: Make the image circular */
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Ensure the height matches the width for a circular image */
+    object-fit: cover; /* Ensures the image covers the specified dimensions */
+}
+
+/* About Me section */
+#about {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Gradient background */
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center; /* Center align text */
+    border-radius: 8px; /* Added border radius */
+}
+
+#about h2,
+#about p {
+    color: white;
+}
+
+/* Skills section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skill {
+    background-color: #EEF5DB; /* Changed background color */
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: black; /* Changed text color */
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Container for experience section */
+#experience {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    gap: 2rem; /* Space between experience items */
+    margin-top: 2rem; /* Space above the experience section */
+}
+
+/* Experience items container */
+.experience-items-container {
+    display: flex;
+    justify-content: space-between; /* Space between experience items */
+    gap: 2rem; /* Space between items */
+}
+
+/* Individual experience item */
+.experience-item {
+    flex: 1; /* Allow items to grow equally */
+    max-width: 45%; /* Limit width to fit side by side */
+    text-align: center; /* Center align text */
+    background: rgba(0, 0, 0, 0.7); /* Optional: Background color for better visibility */
+    padding: 1rem; /* Padding inside each item */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Education section */
+#education {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Optional: Background color for better visibility */
+    padding: 1rem; /* Padding inside the section */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Projects section */
+#projects {
+    padding: 4rem 2rem; /* Adjusted padding for the projects section */
+}
+
+.projects-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.project-card {
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white; /* Changed text color to white */
+    flex: 0 0 auto;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem; /* Space between heading and description */
+}
+
+.project-card p {
+    margin-bottom: 1rem; /* Space between description and link */
+}
+
+.project-card a {
+    display: block; /* Make the link block-level to occupy full width */
+    color: white; /* Changed link color */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0.5rem; /* Space above the link */
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: white; /* Change link color on hover */
+}
+
+/* Contact section */
+#contact {
+    padding: 4rem 2rem; /* Adjusted padding for the contact section */
+}
+
+#contact h2 {
+    margin-bottom: 2rem; /* Added space below the heading */
+}
+
+#contact a {
+    color: white; /* Changed text color to white */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+#contact a:hover {
+    background-color: #e74c3c;
+    border-radius: 5px;
+    color: white; /* Change text color on hover */
+}
+
+.education-experience-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center align items */
+    gap: 2rem; /* Space between the sections */
+    margin-top: 2rem; /* Space above the container */
+    padding: 2rem; /* Add padding for spacing */
+}
+
+/* Education and experience sections */
+#education, #experience {
+    flex: 1;
+    max-width: 800px; /* Optional: Set a maximum width for the sections */
+    text-align: center; /* Center align text */
+}
+
+/* Container for experience section */
+.experience-wrapper {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Space items between left and right */
+    margin-top: 2rem; /* Space above the experience section */
+}
+
+/* Individual experience item */
+.experience-item {
+    width: 45%; /* Set a width to ensure they fit side by side */
+    text-align: left; /* Align text to the left */
+    background: rgba(0, 0, 0, 0.1); /* Optional: Background color for better visibility */
+    padding: 1rem; /* Padding inside each item */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+/* EduAI Page Specific Styles */
+
+#eduai-intro {
+    position: relative; /* Make sure the section is positioned relative to control z-index */
+    padding: 4rem 2rem;
+    text-align: left; /* Align text to the left */
+    z-index: 1; /* Ensure EduAI section is on top */
+}
+
+#eduai-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Black gradient background */
+    z-index: -1; /* Place the gradient background behind the content */
+    text-align: left;
+}
+
+/* Features Section */
+#features {
+    background: none; /* Remove any background color or gradient */
+    padding: 4rem 2rem;
+    color: white;
+    text-align: left; /* Align text to the left */
+    z-index: 1; /* Ensure it stays on top of any background elements */
+}
+
+#features h2 {
+    font-size: 3rem; /* Increased font size for Features heading */
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+#features .feature {
+    margin-bottom: 2rem;
+}
+
+#features h3 {
+    font-size: 1.5rem; /* Slightly smaller font size for feature subheadings */
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+#features p {
+    font-size: 0.9rem; /* Smaller font size for feature description text */
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Tech Stack Section */
+#techstack {
+    padding: 4rem 2rem;
+    text-align: left; /* Align text to the left */
+}
+
+#techstack h2 {
+    font-size: 3rem; /* Increased font size for Tech Stack heading */
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+#techstack ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#techstack li {
+    font-size: 1rem; /* Smaller font size for tech stack items */
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 2rem;
+    text-align: left; /* Align text to the left */
+}
+
+#contact h2 {
+    font-size: 2.5rem; /* Font size for contact heading */
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1rem; /* Font size for contact paragraph */
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #e74c3c; /* Contact link background color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact a:hover {
+    background-color: white; /* Contact link hover background color */
+    color: #e74c3c;
+}
+/* EduAI Section Images */
+/* EduAI Section Images */
+/* EduAI Section Images Container */
+.eduai-images {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent images from wrapping to the next line */
+    gap: 1rem; /* Space between images */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-bottom: 1rem; /* Space for the scrollbar */
+    margin-bottom: 2rem; /* Space below the images */
+}
+
+.eduai-image {
+    width: 100%; /* Make the image fill the container width */
+    max-width: 200px; /* Limit the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+/* General styles for the calorie tracker page */
+#calorie-tracker {
+    background: rgba(0, 0, 0, 0.7); /* Optional: Background color for the section */
+    padding: 2rem;
+    margin: 2rem 0;
+    color: white;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+#calorie-tracker h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#calorie-tracker p {
+    margin-bottom: 1rem;
+}
+
+#calorie-tracker h3 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#calorie-tracker ul {
+    list-style: disc;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+#calorie-tracker ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Container for Calorie Tracker images */
+.calorie-tracker-images-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1rem; /* Space between images */
+    padding: 1rem 0; /* Add padding to the container */
+}
+
+.calorie-tracker-images-container img {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 1rem; /* Left and right margin for images */
+    border-radius: 8px; /* Optional: Rounded corners for images */
+}
+/* General styles for the MoodHarbor page */
+#moodharbor {
+    background: rgba(0, 0, 0, 0.7); /* Optional: Background color for the section */
+    padding: 2rem;
+    margin: 2rem 0;
+    color: white;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+#moodharbor h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#moodharbor p {
+    margin-bottom: 1rem;
+}
+
+#moodharbor h3 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#moodharbor ul {
+    list-style: disc;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+#moodharbor ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Container for MoodHarbor images */
+.moodharbor-images-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1rem; /* Space between images */
+    padding: 1rem 0; /* Add padding to the container */
+}
+
+.moodharbor-images-container img {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 1rem; /* Left and right margin for images */
+    border-radius: 8px; /* Optional: Rounded corners for images */
+}
+/* General styles for the eVQUICK page */
+#evquick {
+    background: rgba(0, 0, 0, 0.7); /* Optional: Background color for the section */
+    padding: 2rem;
+    margin: 2rem 0;
+    color: white;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+#evquick h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#evquick p {
+    margin-bottom: 1rem;
+}
+
+#evquick h3 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#evquick ul {
+    list-style: disc;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+#evquick ul li {
+    margin-bottom: 0.5rem;
+}
+
+#evquick ul li a {
+    color: #e74c3c; /* Highlight color for links */
+    text-decoration: none;
+}
+
+#evquick ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+/* General styles for the ShopEZ page */
+#shopez {
+    background: rgba(0, 0, 0, 0.7); /* Optional: Background color for the section */
+    padding: 2rem;
+    margin: 2rem 0;
+    color: white;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+#shopez h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#shopez p {
+    margin-bottom: 1rem;
+}
+
+#shopez h3 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#shopez ul {
+    list-style: disc;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+#shopez ul li {
+    margin-bottom: 0.5rem;
+}
+
+#shopez ul li strong {
+    color: #e74c3c; /* Highlight color for features */
+}
+#shopez .images-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1rem; /* Space between images */
+    padding: 1rem 0;
+}
+
+#shopez .images-container img {
+    max-width: 200px; /* Adjust this value as needed to make images smaller */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow for better visibility */
+}
+/* General styles for the VASTU page */
+#vastu {
+    background: rgba(0, 0, 0, 0.7); /* Optional: Background color for the section */
+    padding: 2rem;
+    margin: 2rem 0;
+    color: white;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+#vastu h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#vastu p {
+    margin-bottom: 1rem;
+}
+
+#vastu h3 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#vastu ul {
+    list-style: disc;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+#vastu ul li {
+    margin-bottom: 0.5rem;
+}
+
+#vastu ul li strong {
+    color: #e74c3c; /* Highlight color for features */
+}
+
+#vastu .images-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1rem; /* Space between images */
+    padding: 1rem 0;
+}
+
+#vastu .images-container img {
+    max-width: 200px; /* Adjust this value to make images smaller */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow for better visibility */
+}
+/* General styles for the Vidhikar page */
+#vidhikar {
+    background: rgba(0, 0, 0, 0.7); /* Optional: Background color for the section */
+    padding: 2rem;
+    margin: 2rem 0;
+    color: white;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+#vidhikar h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#vidhikar p {
+    margin-bottom: 1rem;
+}
+
+#vidhikar h3 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+#vidhikar ul {
+    list-style: disc;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+#vidhikar ul li {
+    margin-bottom: 0.5rem;
+}
+
+#vidhikar ul li strong {
+    color: #e74c3c; /* Highlight color for features */
+}
+
+
+
